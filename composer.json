@@ -1,0 +1,16 @@
+{
+    "name": "fernandez/gs",
+    "description": "Basic Student Grading System",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fernandez\\Gs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fernandez P."
+        }
+    ],
+    "require": {}
+}
