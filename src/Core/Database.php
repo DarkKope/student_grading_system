@@ -3,7 +3,8 @@
 namespace Fernandez\Gs\Core;
 use mysqli;
 
-class Database {
+class Database 
+{
     protected $conn;
 
     public function __construct()

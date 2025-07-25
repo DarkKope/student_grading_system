@@ -3,6 +3,7 @@
 namespace Fernandez\Gs\Models;
 
 use Fernandez\Gs\Core\Crud;
+use Fernandez\Gs\Core\Database;
 
 class StudentModel extends Database implements Crud {
 
@@ -24,19 +25,21 @@ public function __construct()
 }
 
     public function create(){
-
+       
     }
+
+
     public function read(){
         try {
             $sql = "SELECT * FROM students";
-            $result = $this->conn->query($sql);
+            $results = $this->conn->query($sql) ;
             return $results->fetch_all(MYSQLI_ASSOC);
         } catch (\Throwable $th) {
             echo $th->getMessage();
         }
     }
     public function update($id){
-
+        
     }
     public function delete($id){
 
