@@ -1,5 +1,5 @@
 <?php
-namespace Fernandez\Gs\core;
+namespace Fernandez\Gs\Core;
 
 interface Crud {
     public function create ();
